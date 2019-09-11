@@ -11,22 +11,22 @@
 </template>
 
 <script>
-import Car from "../components/Car";
-import CreateCarModal from "../components/CreateCarModal";
-export default {
-  name: "cars",
-  data() {
-    return {};
-  },
-  mounted() {
-    this.$store.dispatch("getCars");
-  },
-  methods: {},
-  computed: {
-    cars() {
-      return this.$store.state.cars;
-    }
-  },
-  components: { Car, CreateCarModal }
-};
+  import Car from "../components/Car";
+  import CreateCarModal from "../components/CreateCarModal";
+  export default {
+    name: "cars",
+    data() {
+      return {};
+    },
+    mounted() {
+      this.$store.dispatch("getCars");
+    },
+    methods: {},
+    computed: {
+      cars() {
+        return this.$store.state.cars;
+      }
+    },
+    components: { Car, CreateCarModal }
+  };
 </script>
